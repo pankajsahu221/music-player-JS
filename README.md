@@ -3,4 +3,4 @@ Right now having only three music..
 
 Screenshot
 
-![screenshot](https://github.com/[pankajsahu221]/[music-player-JS]/blob/[imgs]/mp.jpg?raw=true)
+![screenshot](https://github.com/[pankajsahu221]/[music-player-JS]/blob/[0]/mp.jpg?raw=true)
