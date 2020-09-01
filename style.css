@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 125%;
+}
+@media screen and (max-width:450px){
+    html{
+        font-size: 100%;
+    }
+    .app{
+        width: 100%;
+    }
+}
+body{
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 40, 40);
+    transition: all 0.3s ease;
+}
+a:hover{
+    color: white;
+    transition: all 0.3s ease;
+}
+.top{
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+    margin: 0.8rem 0 1.2rem 0;
+}
+.logo{
+    font-size: 1.2rem;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 2rem;
+    justify-content: center;
+    color: rgb(255, 40, 40);
+    text-decoration: none;
+    background-image: linear-gradient( #000000 0%, #161616 100%);
+    width: 20rem;
+    border-radius: 3px;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 1.3rem;
+}
+.artist{
+    color: white;
+    font-family: 'Hind Madurai', sans-serif;
+}
+.img{
+    border-radius: 50%;
+    border: 2px solid rgb(255, 40, 40);
+    overflow: hidden;
+    height: auto;
+    width: 76%;
+    max-width: 17.5rem;
+}
+.img img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease;
+}
+.img img:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+.time{
+    width:90%; 
+    display: flex;
+    justify-content: space-between;
+    /* background: wheat; */
+}
+.player-controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: white; */
+    width: 90%;
+    transition: all 0.3s ease;
+}
+.player-controller a{
+    transition: all 0.3s ease;
+}
+.player-controller a:hover{
+    color: white;
+    transition: all 0.3s ease;
+}
+.play-pause{
+    font-size: 1.5rem;
+    margin: 0 1.5rem ;
+    padding: 0.7rem;
+    border: 2px solid rgb(255, 40, 40);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.play-pause:hover{
+    /* background: rgb(255, 40, 40); */
+    border-color: white;
+    color: white;
+    transition: all 0.3s ease;
+}
+.seek-container{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 0.5rem 0 ;
+    width: 90%;
+}
+.seek{       
+    width: 100%;
+    height: 5px;
+    background: rgb(255, 40, 40);
+    border-radius: 50px;
+}
+.seek .fill{
+    width: 0%;
+    height: 5px;
+    background: white;
+    border-radius: 50px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: white; */
+    margin: 1rem;
+    font-size: 1rem;
+}
+.footer a{
+    color: white;
+    transition: all 0.3s ease;
+}
+.increase,
+.decrease{
+    background: white;
+    padding:0 0.5rem;
+    height: 30px;
+    width: 30px;
+    font-size:20px; 
+    font-weight: lighter;
+    color: rgb(255, 40, 40);
+    border: none;
+    font-weight: bolder;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer a:hover{
+    color:rgb(255, 40, 40);
+    transition: all 0.3s ease;
+}
+.increase:hover,
+.decrease:hover{
+    background: transparent;
+    transition: all 0.3s ease;
+}

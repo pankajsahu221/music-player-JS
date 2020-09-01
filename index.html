@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <!-- fits the screen according to the device's width and height -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--to add favicon(logo in side of title)  -->
+  <!-- <link rel="icon" href="weatherpng.png" type="image/png"> -->
+
+  <meta charset="utf-8">
+
+  <title>Music player</title>
+  <meta name="description" content="scroll">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <div class="app">
+        <!-- top header -->
+        <div class="top">
+            <a href="#" class="fas fa-bars"></a>
+            <h2 class="logo">Music Player</h2>      <!-- font-family: 'Poppins', sans-serif; -->
+            <a href="#" class="far fa-heart"></a>
+        </div>
+
+        <!-- the player -->
+        <div class="player">
+
+            <div class="img">
+              <img src="img/cover1.jpg">
+            </div>
+            <h2 class="title">King Kong Song</h1>
+            <p class="artist">Artist : No_Name </p>
+
+            <!-- seek bar -->
+            <div class="seek-container">
+                <div class="seek">
+                    <div class="fill"></div>
+                </div>
+            </div>
+
+            <!-- time passed -->
+            <div class="time">
+                <span class="current-time">0:00</span>
+                <span class="end-time">2:37</span>
+            </div>
+        
+
+            <!-- player contoller -->
+            <div class="player-controller">
+                 <a href="#" class="fa fa-backward" onclick="prevAudio()"></a>
+                 <div class="play-pause-container">
+                     <a href="#"  class="fa fa-play play-pause" onclick="togglePlayPause()"  ></a>
+                  </div>
+                  <a href="#" class="fa fa-forward" onclick="nextAudio()"></a>
+            </div>
+        </div>
+
+        <!-- the bottom -->
+        <div class="footer">
+              <a href="#" class="fa fa-retweet repeat-btn"></a>
+              <button class="decrease" onclick="decreaseVolume()" >-</button>
+              <div class="mute-btn">
+                  <a href="#" class="fa fa-volume-up" onclick="muteAudio()"></a>
+              </div>
+              <button class="increase" onclick="increaseVolume()" >+</button>
+              <a href="#" class="fa fa-random"></a>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
